@@ -1,0 +1,72 @@
+<!--Il n'y a pas de mauvais navigateur, il n'y que du mauvais code !-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PacMan - SIG3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="picture\pacman_carte.png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.1.0/ol.css">
+        <link rel="stylesheet" type="text/css" href="style.css" >
+    </head>
+
+    <body>
+        <div class ="hautdepage">
+             <div style="text-align: center;">
+             <img src="picture/pacman_museum.png" width=30% height=30% alt="">
+            </div>
+        </div>
+
+        <div class ="hautdepage">
+            <marquee width="100%" scrollamount="25" scrolldelay="10">
+                <!-- L'objet parcourt 2px chaque 10ms -->
+                <img src="picture/pacman.jpg" width="20%">
+            </marquee>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-6">
+                    <form action="/index.html" method="post">
+                        <div>
+                            <label for="name">Nom :</label>
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                    </form>
+                    <h3>
+                        Meilleures scores
+                    </h3>
+                    <!-- https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68 
+                         https://dev.to/minna_xd/adding-a-high-score-table-to-javascript30-whack-a-mole-4adk
+                         https://progbook.org/ex_hiscore_table.html
+                    -->
+                    <div class="scores">
+                        <table>
+                            <tr>
+                                <th>Classement</th>
+                                <th>Nom</th>
+                                <th>Points</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>MFX</td>
+                                <td>500</td>
+                            </tr> 
+                            <tr>
+                                <td>2</td>
+                                <td>APB</td>
+                                <td>300</td>
+                            </tr>       
+                        </table>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="button">
+                        <button class="button-play" onclick="window.location.href = 'game_map.html'""> Jouer </button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
